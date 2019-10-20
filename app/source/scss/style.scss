@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Rubik"),
+    url("../fonts/Rubik-Regular.woff2"),
+    url("../fonts/Rubik-Regular.woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local("Rubik"),
+    url("../fonts/Rubik-Medium.woff2"),
+    url("../fonts/Rubik-Medium.woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Rubik"),
+    url("../fonts/Rubik-Bold.woff2"),
+    url("../fonts/Rubik-Bold.woff");
+}
+
+@import "normalize";

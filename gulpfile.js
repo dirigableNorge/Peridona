@@ -10,6 +10,8 @@ var webp = require("gulp-webp");
 var sprite = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var ttf2woff = require("gulp-ttf2woff");
+var ttf2woff2 = require("gulp-ttf2woff2");
 var del = require("del");
 var server = require("browser-sync").create();
 
@@ -60,6 +62,15 @@ gulp.task("html", function () {
         .pipe(posthtml([include()]))
         .pipe(gulp.dest("app/build"));
 });
+
+gulp.task("fonts", function () {
+    gulp.src("app/source/fonts/*.ttf")
+        .pipe(ttf2woff())
+        .pipe(gulp.dest("app/build/fonts"));
+    gulp.src("app/source/fonts/*.ttf")
+        .pipe(ttf2woff2())
+        .pipe(gulp.dest("app/build/fonts"));
+})
 
 gulp.task("copy", function () {
     return gulp.src([

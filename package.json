@@ -4,9 +4,9 @@
   "description": "website",
   "main": "index.js",
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"build": "gulp build",
-	"start": "npm run build && gulp serve"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
   },
   "author": "Taras Tenitskyi",
   "email": "dirigableNorge@gmail.com",
@@ -24,6 +24,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-svgstore": "^7.0.1",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.3.0"
   }
