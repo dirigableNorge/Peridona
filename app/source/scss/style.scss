@@ -28,4 +28,38 @@
     url("../fonts/Rubik-Bold.woff");
 }
 
+body {
+  font-family: "Rubik", "Arial", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//global variables
+$link-color: #0a1c51;
+$link-active-color: black;
+$blue-text-color: #131f4f;
+
+//imports
 @import "normalize";
+@import "blocks/page-header";
+@import "blocks/site-nav";
+@import "blocks/intro";
+@import "blocks/short-contacts";

@@ -15,15 +15,16 @@ var ttf2woff2 = require("gulp-ttf2woff2");
 var del = require("del");
 var server = require("browser-sync").create();
 
-gulp.task("style", function () {
-    gulp.src("app/source/css/style.scss")
+gulp.task("style", function (done) {
+    gulp.src("app/source/scss/style.scss")
         .pipe(plumber())
         .pipe(sass())
-        .pipe(postcss([autoprefixer()]))
-        .pipe(gulp.dest("app/source/css"))
+        .pipe(autoprefixer())
+        .pipe(gulp.dest("app/build/css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("app/sourse/css"));
+        .pipe(gulp.dest("app/build/css"));
+    done();
 });
 
 gulp.task("images", function () {
@@ -50,7 +51,7 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
     return gulp.src("app/source/img/icon-*.svg")
-        .pipe(svgstore({
+        .pipe(sprite({
             inlineSvg: true
         }))
         .pipe(rename("sprite.svg"))
@@ -58,9 +59,11 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
+
     return gulp.src("app/source/*.html")
         .pipe(posthtml([include()]))
         .pipe(gulp.dest("app/build"));
+
 });
 
 gulp.task("fonts", function () {
@@ -83,8 +86,11 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function () {
-    console.log("start clean");
-    return del("app/build");
+    return del([
+        "app/build/**/*.html",
+        "app/build/css",
+        "app/build/js"
+    ]);
 });
 
 gulp.task("serve", function () {
@@ -92,11 +98,8 @@ gulp.task("serve", function () {
         server: "app/build/"
     });
 
-    gulp.watch("app/source/scss/**/*.scss", gulp.parallel("style"));
-    gulp.watch("app/source/*.html", gulp.parallel("html"));
+    gulp.watch("app/source/scss/**/*.scss", gulp.parallel("style")).on("change", server.reload);
+    gulp.watch("app/source/*.html", gulp.parallel("html")).on("change", server.reload);
 });
 
-gulp.task("build", function (done) {
-    gulp.series("clean", "copy", "style", "sprite", "html");
-    done();
-});
+gulp.task("build", gulp.series("clean", "copy", "style", "sprite", "html"));

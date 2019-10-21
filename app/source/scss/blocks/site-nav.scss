@@ -1,0 +1,30 @@
+.site-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav__item {
+  margin-right: 40px;
+}
+
+.site-nav__link {
+  display: block;
+  padding: 33px 0;
+
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $link-color;
+
+  &[href]:hover,
+  &[href]:focus {
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    color: $link-active-color;
+  }
+}
