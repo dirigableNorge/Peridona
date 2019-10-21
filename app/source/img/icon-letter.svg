@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="15" viewBox="0 0 22 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1207" y="114" width="22" height="15" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#131f4f"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M1209.75,129h16.5a2.634,2.634,0,0,0,2.75-2.5v-10a2.634,2.634,0,0,0-2.75-2.5h-16.5a2.634,2.634,0,0,0-2.75,2.5v10A2.634,2.634,0,0,0,1209.75,129Zm4.53-6.672-5.82,4.535a1.12,1.12,0,0,1-.09-0.362v-10a1.037,1.037,0,0,1,.06-0.244Zm-4.53,5.422a1.4,1.4,0,0,1-.26-0.049l8.51-6.629,8.51,6.629a1.4,1.4,0,0,1-.26.049h-16.5Zm17.82-11.494a1.01,1.01,0,0,1,.05.243v10a1.108,1.108,0,0,1-.08.362l-5.82-4.534Zm-1.32-1.006a1.35,1.35,0,0,1,.39.072l-5.96,6.194-2.23-1.74a0.746,0.746,0,0,0-.9,0l-2.23,1.739-5.96-6.193a1.35,1.35,0,0,1,.39-0.072h16.5Z" transform="translate(-1207 -114)"/>
+</svg>
