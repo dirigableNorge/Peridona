@@ -83,6 +83,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function () {
+    console.log("start clean");
     return del("app/build");
 });
 
