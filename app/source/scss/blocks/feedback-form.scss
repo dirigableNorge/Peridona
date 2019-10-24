@@ -1,0 +1,34 @@
+.feedback-form {
+  padding: 30px;
+  background-color: #082362;
+}
+
+.feedback-form__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 40px;
+  color: white;
+}
+
+.feedback-form__input-text {
+  width: 540px;
+  margin-bottom: 20px;
+  padding: 15px 30px;
+
+  border: 1px solid #dddddd;
+
+  &::placeholder {
+    font-size: 14px;
+    color: #999999;
+  }
+}
+
+textarea.feedback-form__input-text {
+  min-height: 131px;
+}
+
+.feedback__button {
+  padding-left: 60px;
+  padding-right: 60px;
+}

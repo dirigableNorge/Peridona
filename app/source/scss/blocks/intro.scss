@@ -34,6 +34,7 @@ $intro-bg-color: #10205a;
 
 .intro__container {
   display: flex;
+  justify-content: space-between;
 
   &:nth-child(2) {
     margin-bottom: 113px;
@@ -114,4 +115,8 @@ $intro-bg-color: #10205a;
 .intro__clients-item {
   padding-top: 44px;
   padding-bottom: 37px;
+}
+
+.intro__short-about {
+  padding-right: 90px;
 }

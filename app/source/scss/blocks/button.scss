@@ -1,0 +1,31 @@
+.button {
+  padding: 13px 22px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 500;
+
+  border: 0;
+}
+
+.button--light {
+  color: #082362;
+
+  background-color: white;
+
+  &:hover,
+  &:focus {
+    color: black;
+
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button--dark {
+  color: white;
+
+  background-color: #0c245d;
+}

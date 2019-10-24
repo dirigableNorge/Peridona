@@ -229,19 +229,19 @@
                     
                 </div>
                 <div class="intro__container">
-                    <div class="intro__wrap">
-                        <h3>We are Unique & different</h3>
-                        <h4>About our Business</h4>
-                        <p>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    <div class="intro__short-about short-about">
+                        <h3 class="short-about__title">We are Unique & different</h3>
+                        <h4 class="short-about__subtitle">About our Business</h4>
+                        <p class="short-about__text"><b>Aliquip ex ea commodo consequat.</b> Duis aute irure dolor in reprehenderit in voluptate velit
                             esse
                             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        <p class="short-about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             nisi
                             ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                             velit
                             esse cillum.</p>
-                        <table>
+                        <table class="short-about__completed">
                             <tr>
                                 <th>23000</th>
                                 <th>10333</th>
@@ -254,39 +254,46 @@
                             </tr>
                         </table>
                     </div>
-                    <form class="intro__feedback-form" action="" method="POST">
-                        <h3>Get in tuch</h3>
-                        <label></label>
-                        <input type="text" name="" id="" placeholder="Enter your name">
-                        <label></label>
-                        <input type="text" name="" id="" placeholder="Enter your email">
-                        <label for=""></label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button class="feedback__button">Send</button>
+                    <form class="intro__feedback-form feedback-form" action="" method="POST">
+                        <h3 class="feedback-form__title">Get in tuch</h3>
+                        <label for="feedbackName" class="visually-hidden">Name</label>
+                        <input class="feedback-form__input-text" type="text" name="feedbackName" id="feedbackName" placeholder="Enter your name">
+                        <label for ="feedbackEmail" class="visually-hidden">Email</label>
+                        <input class="feedback-form__input-text" type="text" name="feedbackEmail" id="feedbackEmail" placeholder="Enter your email">
+                        <label for="feedbackMessage" class="visually-hidden">Message</label>
+                        <textarea class="feedback-form__input-text" name="feedbackMessage" id="feedbackMessage" placeholder="Message"></textarea>
+                        <button class="feedback__button button button--light">Send</button>
                     </form>
                 </div>
             </div>
         </section>
         <section class="how-work">
-            <h2 class="how-work__title">How do we work ...</h2>
-            <ul class="how-work__list">
-                <li class="how-work__item">
-                    <h3 class="how-work__item-title">All Necessary Data Collection</h3>
-                    <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                        ipsum suspendisse.</p>
-                </li>
-
-                <li class="how-work__item">
-                    <h3 class="how-work__item-title">Analysis Data</h3>
-                    <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                        ipsum suspendisse.</p>
-                </li>
-                <li class="how-work__item">
-                    <h3 class="how-work__item-title">Report the best Solution</h3>
-                    <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                        ipsum suspendisse.</p>
-                </li>
-            </ul>
+            <div class="how-work__wrapper">
+                <div class="how-work__content">
+                    <h2 class="how-work__title">How do we work ...</h2>
+                    <ul class="how-work__list">
+                        <li class="how-work__item how-work__item--collection">
+                            <h3 class="how-work__item-title">All Necessary Data Collection</h3>
+                            <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                ipsum suspendisse.</p>
+                        </li>
+        
+                        <li class="how-work__item how-work__item--analysis">
+                            <h3 class="how-work__item-title">Analysis Data</h3>
+                            <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                ipsum suspendisse.</p>
+                        </li>
+                        <li class="how-work__item how-work__item--report">
+                            <h3 class="how-work__item-title">Report the best Solution</h3>
+                            <p class="how-work__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                                ipsum suspendisse.</p>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="how-work__video">
+                <button class="how-work__play-btn"><span class="visually-hidden">Play video</span></button>
+            </div>
         </section>
         <section class="about">
             <h2 class="about__title">About Our Service</h2>

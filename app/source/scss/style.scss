@@ -3,8 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Rubik"),
-    url("../fonts/Rubik-Regular.woff2"),
+  src: local("Rubik"), url("../fonts/Rubik-Regular.woff2"),
     url("../fonts/Rubik-Regular.woff");
 }
 
@@ -13,8 +12,7 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("Rubik"),
-    url("../fonts/Rubik-Medium.woff2"),
+  src: local("Rubik"), url("../fonts/Rubik-Medium.woff2"),
     url("../fonts/Rubik-Medium.woff");
 }
 
@@ -23,8 +21,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Rubik"),
-    url("../fonts/Rubik-Bold.woff2"),
+  src: local("Rubik"), url("../fonts/Rubik-Bold.woff2"),
     url("../fonts/Rubik-Bold.woff");
 }
 
@@ -59,7 +56,12 @@ $blue-text-color: #131f4f;
 
 //imports
 @import "normalize";
+@import "blocks/button.scss";
 @import "blocks/page-header";
 @import "blocks/site-nav";
 @import "blocks/intro";
 @import "blocks/short-contacts";
+@import "blocks/short-about";
+@import "blocks/feedback-form";
+@import "blocks/how-work";
+@import "blocks/about";
