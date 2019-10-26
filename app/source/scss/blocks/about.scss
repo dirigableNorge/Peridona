@@ -1,0 +1,47 @@
+.about {
+  background-color: #f5f5f5;
+}
+
+.about__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 130px 15px 140px;
+}
+
+.about__header {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.about__title {
+  position: relative;
+
+  min-width: 370px;
+  margin: 0;
+  margin-right: 30px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: #082362;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 2px;
+
+    width: 3px;
+    height: 61px;
+
+    background-image: url("../img/title_decor.svg");
+  }
+}
+
+.about__small-description {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #6b6b6b;
+}
+
