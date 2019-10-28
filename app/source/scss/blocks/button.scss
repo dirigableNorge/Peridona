@@ -5,6 +5,8 @@
   font-weight: 500;
 
   border: 0;
+
+  cursor: pointer;
 }
 
 .button--light {
@@ -28,4 +30,13 @@
   color: white;
 
   background-color: #0c245d;
+
+  &:hover,
+  &:focus {
+    background-color: #0c365d;
+  }
+
+  &:active {
+    background-color: #0c145d;
+  }
 }

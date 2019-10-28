@@ -14,6 +14,7 @@
 
 .achievments__table  {
   th {
+    width: 240px;
     padding-bottom: 20px;
 
     font-size: 48px;
@@ -21,6 +22,10 @@
     font-weight: 700;
     color: white;
     text-align: left;
+
+    &:not(:first-child) {
+      padding-left: 30px;
+    }
   }
   
   tr:nth-child(2) td {
@@ -31,12 +36,22 @@
     font-weight: 500;
     color: #b4b4b4;
     text-align: left;
+
+    &:not(:first-child) {
+      padding-left: 30px;
+    }
   }
 
-  tr:nth-child(3) {
+  tr:nth-child(3) td {
+
     font-size: 15px;
     line-height: 25px;
     color: white;
     text-align: left;
+    vertical-align: top;
+
+    &:not(:first-child) {
+      padding-left: 30px;
+    }
   }
 }
