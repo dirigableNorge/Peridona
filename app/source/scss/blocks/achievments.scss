@@ -1,0 +1,42 @@
+.achievments {
+  background-color: #0c245d;
+  background-image: url("../img/achievments_bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.achievments__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 85px 15px;
+}
+
+.achievments__table  {
+  th {
+    padding-bottom: 20px;
+
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+  }
+  
+  tr:nth-child(2) td {
+    padding-bottom: 30px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #b4b4b4;
+    text-align: left;
+  }
+
+  tr:nth-child(3) {
+    font-size: 15px;
+    line-height: 25px;
+    color: white;
+    text-align: left;
+  }
+}
