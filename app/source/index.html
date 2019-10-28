@@ -444,33 +444,36 @@
             </div>            
         </section>
         <section class="moments">
-            <h2 class="moments__title">Our Happy Moments</h2>
-            <p class="moments__small-description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua.</p>
-            <button class="moments__button">Learn More</button>
+            <div class="moments__header">
+                <h2 class="moments__title">Our Happy Moments</h2>
+                <p class="moments__small-description">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <button class="button button--dark moments__button">Learn More</button>
+            </div>            
             <form action="" method="GET" class="moments__filter">
-                <label>
-                    <input type="radio" name="moments" id="">
-                    All
-                </label>
-                <label>
-                    <input type="radio" name="moments" id="">
-                    Business Plan
-                </label>
-                <label>
-                    <input type="radio" name="moments" id="">
-                    Business Development
-                </label>
-                <label>
-                    <input type="radio" name="moments" id="">
-                    Marketing
-                </label>
-                <label>
-                    <input type="radio" name="moments" id="">
-                    Development
-                </label>
+                <input class="moments__radio visually-hidden" type="radio" name="moments" id="all" checked>
+                <label for="all" class="moments__label">All</label>
+                <input class="moments__radio visually-hidden" type="radio" name="moments" id="businessPlan">
+                <label for="businessPlan" class="moments__label">Business Plan</label>
+                <input class="moments__radio visually-hidden" type="radio" name="moments" id="businessDevelopment">
+                <label for="businessDevelopment" class="moments__label">Business Development</label>                
+                <input class="moments__radio visually-hidden" type="radio" name="moments" id="marketing">
+                <label for="marketing" class="moments__label">Marketing</label>
+                <input class="moments__radio visually-hidden" type="radio" name="moments" id="development">
+                <label for="development" class="moments__label">Development</label>
             </form>
-            <div class="moments__gallery"></div>
+            <div class="moments__gallery">
+                <div class="moments__left-column">
+                    <img src="img/memories1.jpg" alt="Memories photo" width="470" height="353" class="moments__image">
+                    <img src="img/memories2.jpg" alt="Memories photo" width="270" height="353" class="moments__image">
+                    <img src="img/memories5.jpg" alt="Memories photo" width="370" height="230" class="moments__image">
+                    <img src="img/memories4.jpg" alt="Memories photo" width="370" height="230" class="moments__image">
+                </div>
+                <div class="moments__right-column">
+                    <img src="img/memories3.jpg" alt="Memories photo" width="370" height="178" class="moments__image">
+                    <img src="img/memories6.jpg" alt="Memories photo" width="370" height="403" class="moments__image">
+                </div>
+            </div>
         </section>
         <section class="map"></section>
     </main>
