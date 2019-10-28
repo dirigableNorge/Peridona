@@ -1,0 +1,44 @@
+.subscribtion__desc {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 15px;
+  line-height: 15px;
+  color: #d9d9d9;
+}
+
+.subscription__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 15px 10px;
+
+  color: white;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #959595;
+
+  &::placeholder {
+    font-size: 15px;
+    color: #a3a3a3;
+  }
+}
+
+.subscription__button {
+  color: white;
+
+  background: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  cursor: pointer;
+}

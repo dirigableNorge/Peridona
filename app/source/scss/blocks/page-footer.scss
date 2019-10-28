@@ -1,8 +1,8 @@
 .page-footer {
-  background-color: #001443;
-  background-image: linear-gradient(#082360, #082360);
-  background-repeat: no-repeat;
-  background-size: 100% 360px;
+  position: relative;
+  padding-bottom: 140px;
+
+  background-color: #082360;
 }
 
 .page-footer__wrapper {
@@ -19,7 +19,31 @@
 }
 
 .page-footer__title {
-  
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fefefe;
+}
+
+.page-footer__text {
+  margin-bottom: 40px;
+
+  font-size: 15px;
+  line-height: 28px;
+  color: #d9d9d9;
+}
+
+.page-footer__subtitle {
+  margin: 0;
+  margin-bottom: 45px;
+
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fefefe;
 }
 
 .page-footer__resources {
@@ -34,4 +58,19 @@
 
 .page-footer__subscription {
   width: 370px;
+}
+
+.page-footer__copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  margin: 0;
+  padding: 25px 0;
+
+  color: #949494;
+  text-align: center;
+
+  background-color: #001443;
 }

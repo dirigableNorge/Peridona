@@ -1,0 +1,26 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.links__link {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 15px;
+  color: #d9d9d9;
+
+  &:hover,
+  &:focus {
+    color: white;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
